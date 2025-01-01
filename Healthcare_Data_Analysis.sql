@@ -26,8 +26,6 @@ SELECT AGE, COUNT(AGE) AS Total
 FROM Healthcare
 GROUP BY age
 ORDER BY AGE DESC;
-	-- Findings : The output will display a list of unique ages present in the "Healthcare" table along with the count of occurrences for each age, sorted from oldest 	to youngest.
-    
     
 -- 5. Calculating Maximum Count of patients on basis of total patients hospitalized with respect to age.
 SELECT AGE, COUNT(AGE) AS Total
@@ -54,15 +52,12 @@ FROM Healthcare
 GROUP BY 1,2
 ORDER BY 1; 
 	
-	
-
 -- 9. Most preffered Insurance Provide  by Patients Hospatilized
 SELECT Insurance_Provider, COUNT(Insurance_Provider) AS Total 
 FROM Healthcare
 GROUP BY Insurance_Provider
 ORDER BY Total DESC;
-	-- Findings : This information helps identify the most prevalent insurance providers among the patient population, offering valuable data for resource allocation, understanding coverage preferences, and potentially indicating trends in healthcare accessibility based on insurance networks
-    
+  
 
 -- 10. Finding out most preffered Hospital 
 SELECT Hospital, COUNT(hospital) AS Total 
